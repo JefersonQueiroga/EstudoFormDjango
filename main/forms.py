@@ -2,14 +2,6 @@ from django import forms
 from main.models import Aluno
 
 
-class DatePickerInput(forms.DateInput):
-        input_type = 'date'
-
-class TimePickerInput(forms.TimeInput):
-        input_type = 'time'
-
-
-
 class AlunoForm(forms.ModelForm):
     class Meta:
         model=Aluno

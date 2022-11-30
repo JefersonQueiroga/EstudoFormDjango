@@ -19,5 +19,8 @@ from main.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cadastroaluno/',cadastro_aluno, name='cadastro_aluno')
+    path('cadastroaluno/',cadastro_aluno, name='cadastro_aluno'),
+    path('formtop/',form_top, name='form_top'),
+    path('quemsomos/',TelaQuemSomos.as_view()),
+    path('lista_alunos/',ListAlunosView.as_view()),
 ]
