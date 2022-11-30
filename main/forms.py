@@ -12,3 +12,10 @@ class AlunoForm(forms.ModelForm):
             'sexo': forms.RadioSelect(),
             'data_nascimento': forms.TimeInput(attrs={'type': 'date'}),
         }
+
+class CalcularPesoForm(forms.Form):
+    peso = forms.FloatField()
+    altura = forms.FloatField()
+    object = forms.Textarea()
+
+
