@@ -30,5 +30,4 @@ urlpatterns = [
     path('accounts/login/',LoginView.as_view(template_name='login.html')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('logout/',logout_view,name='logout'),
-    path('questoes/',form_questao,name='form_questao')
 ]
