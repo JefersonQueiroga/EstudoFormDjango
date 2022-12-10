@@ -12,3 +12,6 @@ def cadastro_aluno(request):
 
     return render(request,'form.html', { 'form' : form})
 
+
+def index(request):
+    return render(request,"index.html",{'nome':'Jeferson Queiroga'})

@@ -19,5 +19,6 @@ from main.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cadastroaluno/',cadastro_aluno, name='cadastro_aluno')
+    path('cadastroaluno/',cadastro_aluno, name='cadastro_aluno'),
+    path('',index,name="index")
 ]
